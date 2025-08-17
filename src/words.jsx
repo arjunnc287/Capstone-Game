@@ -1,11 +1,12 @@
 export const words = [
   "arjun",
-  "gowthami",
+
   "about",
   "account",
   "across",
   "addition",
   "after",
+  "gowthami",
   "again",
   "against",
   "agreement",
