@@ -1,4 +1,6 @@
 export const words = [
+  "arjun",
+  "gowthami",
   "about",
   "account",
   "across",
