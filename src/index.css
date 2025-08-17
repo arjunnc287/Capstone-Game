@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Header */
+.Header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.Header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Language Chips */
+.language-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 0.6rem;
+}
+
+.chip {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  background-color: #333;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.chip.lost {
+  opacity: 0.5;
+  text-decoration: line-through;
+  border-color: #ff4e4e;
+}
+
+/* Game Status */
+.game-status {
+  margin-top: 1rem;
+  min-height: 80px;
+}
+
+.farewell-message {
+  color: #ffc107;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.winning-message,
+.losing-message {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.winning-message h2,
+.losing-message h2 {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.losing-message h2 {
+  color: #f44336;
+}
+
+/* Attempts Left */
+.status {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Word Container */
+.word-container {
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.letter {
+  width: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #fff;
+  font-weight: bold;
+}
+
+.letter.hidden {
+  color: #888;
+}
+
+/* Keyboard */
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 0.4rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+.keyboard button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.keyboard button:hover:not(:disabled) {
+  background-color: #666;
+}
+
+.keyboard button.correct {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.keyboard button.wrong {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.keyboard button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* New Game Button */
+.new-game {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-game:hover {
+  background-color: #1976d2;
+}
